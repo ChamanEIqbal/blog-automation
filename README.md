@@ -1,17 +1,17 @@
-# 🚀 Epic Blog Writing Agent v2.0
+# Bilal Bhai Badmaash Bot
 
 The ultimate blog automation system that combines Google Sheets data, AI content generation, and WordPress publishing!
 
-## ✨ Features
+##  Features
 
-- 📊 **Google Sheets Integration** - Read blog topics from your spreadsheet
-- 🤖 **AI Content Generation** - Create high-quality blog posts using OpenRouter API
-- 📝 **Markdown Export** - Save posts as beautifully formatted markdown files
-- 🚀 **WordPress Publishing** - Automatically publish to your WordPress site
-- 🔥 **Batch Processing** - Generate multiple posts in BEAST MODE
-- 🎨 **Custom Topics** - Generate posts for any topic on demand
+-  **Google Sheets Integration** - Read blog topics from your spreadsheet
+-  **AI Content Generation** - Create high-quality blog posts using OpenRouter API
+-  **Markdown Export** - Save posts as beautifully formatted markdown files
+-  **WordPress Publishing** - Automatically publish to your WordPress site
+-  **Batch Processing** - Generate multiple posts in BEAST MODE
+-  **Custom Topics** - Generate posts for any topic on demand
 
-## 🛠️ Setup
+##  Setup
 
 1. **Install Dependencies**
    ```bash
@@ -25,9 +25,10 @@ The ultimate blog automation system that combines Google Sheets data, AI content
      WORDPRESS_URL=https://your-site.com/xmlrpc.php
      WORDPRESS_USERNAME=your_username
      WORDPRESS_PASSWORD=your_password
+     API_KEY+yourAPIKEY
      ```
 
-## 🎯 Usage
+## Usage
 
 ### List Available Topics
 ```bash
@@ -52,7 +53,7 @@ python blog_agent.py --generate-all --to-wordpress
 python blog_agent.py --generate-all --to-wordpress
 ```
 
-## 📁 File Structure
+## File Structure
 
 ```
 blog-automation/
@@ -65,21 +66,21 @@ blog-automation/
 └── blog_posts/           # Generated markdown files
 ```
 
-## 🔧 Configuration Options
+##  Configuration Options
 
 - `--model` - AI model to use (default: openai/gpt-4o-mini)
 - `--output-dir` - Directory for markdown files
 - `--wp-status` - WordPress post status (draft/publish/private)
 - `--to-wordpress` - Enable WordPress publishing
 
-## 📊 Google Sheets Format
+##  Google Sheets Format
 
 Your Google Sheets should have these columns:
 - **Column A**: Primary Keywords
 - **Column B**: Auxiliary Keywords
 - **Column C**: Blog Post Title
 
-## 🎉 Examples
+##  Examples
 
 ```bash
 # List all available topics
@@ -94,7 +95,7 @@ python blog_agent.py --generate 1 --to-wordpress --wp-status publish
 # Generate custom post about AI
 python blog_agent.py --custom "The Future of AI" --to-wordpress
 
-# BEAST MODE: Generate and publish ALL posts
+# BILAL BEAST MODE: Generate and publish ALL posts
 python blog_agent.py --generate-all --to-wordpress --wp-status publish
 ```
 
